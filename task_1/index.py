@@ -1,6 +1,6 @@
 from pathlib import Path
 
-SALARY_FILE = Path('salary1.txt')
+SALARY_FILE = Path('salary.txt')
 
 
 def total_salary(path):
@@ -14,9 +14,9 @@ def total_salary(path):
                 sum_salary += int(salary)
                 quantity_of_employee += 1
     else:
-        print(f'File {path} not exist!')
+        return print(f'File {path} not exist!')
     average_salary = sum_salary / quantity_of_employee
-    result = (sum_salary, int(average_salary))
+    result = (sum_salary, average_salary)
     print(f'Summary salary = {result[0]}, average salary = {result[1]}')
 
 
