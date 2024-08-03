@@ -44,7 +44,7 @@ def main():
             print("How can I help you?")
         elif command == "add":
             print(add_contact(args, contacts))
-        elif command == "show":
+        elif command == "phone":
             print(show_phone(args[0], contacts))
         elif command == "change":
             print(change_contact(args, contacts))
