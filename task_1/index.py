@@ -17,5 +17,6 @@ def total_salary(path):
     return sum_salary, average_salary
 
 
-total, average = total_salary(SALARY_FILE)
-print(f'Summary salary = {total}, average salary = {average}')
+if total_salary(SALARY_FILE):
+    total, average = total_salary(SALARY_FILE)
+    print(f'Summary salary = {total}, average salary = {average}')
